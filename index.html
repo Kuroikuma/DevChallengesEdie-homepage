@@ -9,14 +9,235 @@
     <link rel="icon" href="devchallenges.png" />
 
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
 
     <title>Devchallenges</title>
 
 </head>
 
-<body>
+<body class="container">
+
+    <header class="container__header">
+        <h1 class="container__header__tiltle">Edie</h1>
+        <div id="nav" class="container__header__nav">
+            <button name="Home" onclick="ScrollChange(event)">Home</button>
+            <button name="Services" onclick="ScrollChange(event)">Services</button>
+            <button name="Works" onclick="ScrollChange(event)">Our Works</button>
+            <button name="Clients" onclick="ScrollChange(event)">Clients</button>
+            <button name="Contact" onclick="ScrollChange(event)">Contact</button>
+        </div>
+        <button id="boton" class="container__header--openNav">
+            <img id="img" src="./menu.png" alt="/menu">
+        </button>
+    </header>
+    <div class="container__home">
+        <div class="container__home__presentation">
+            <p>Unhappy with your website?</p>
+            <h3>We create beautiful and fast web services</h3>
+        </div>
+        <img src="./heroImage.jpg" alt="">
+        <div class="container__home__description">
+            <h3>Story, emotion and purpose</h3>
+            <p>We help transform your ideas into real world applications that will outperform your toughest competition
+                and help you
+                achieve your strategic goals in short period of time.</p>
+            <div class="container__home__description__contact">
+                <p>Want us to contact you?</p>
+                <div class="container__home__description__contact__texfield">
+                    <input placeholder="Email" type="email">
+                    <button>Join</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container__services">
+        <h1>
+            We offer high demand services
+        </h1>
+        <div class="container__services__cards">
+            <div class="container__services__cards__item">
+                <div class="container__services__cards__item2">
+                    <div class="container__services__cards__item__icons">
+                        <span class="material-icons">edit</span>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet
+                        id
+                        quis turpis.</p>
+                    <button>Get started</button>
+                </div>
+            </div>
+            <div id="select" class="container__services__cards__item">
+                <div class="container__services__cards__item2">
+                    <div id="green" class="container__services__cards__item__icons">
+                        <span class="material-icons">code</span>
+                    </div>
+                    <h3>Front End</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet
+                        id
+                        quis turpis.</p>
+                    <button id="selectbtn">Get started</button>
+                </div>
+            </div>
+            <div class="container__services__cards__item">
+                <div class="container__services__cards__item2">
+                    <div id="red" class="container__services__cards__item__icons">
+                        <span class="material-icons">storage</span>
+                    </div>
+                    <h3>Back End</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet
+                        id
+                        quis turpis.</p>
+                    <button>Get started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container__works">
+        <div class="container__works__galery">
+            <h1>Good design means good business</h1>
+            <div class="container__works__galery__items">
+                <div id="space" class="item">
+                    <img src="./smarthome.jpg" alt="">
+                    <p>Full stack application</p>
+                    <h6>Smart home dashboard</h6>
+                </div>
+                <div class="item">
+                    <img src="./onboard.png" alt="">
+                    <p>UX/UI design</p>
+                    <h6>Onboard application</h6>
+                </div>
+                <div id="space" class="item">
+                    <img src="./booking.png" alt="">
+                    <p>Mobile application</p>
+                    <h6>Booking system</h6>
+                </div>
+                <div class="item">
+                    <img src="./juice-product.png" alt="">
+                    <p>Front End applicati on</p>
+                    <h6>Juice product homepage</h6>
+                </div>
+            </div>
+        </div>
+        <div class="container__works__more">
+            <p>see more</p>
+        </div>
+    </div>
+    <div class="container__clients">
+        <div class="container__clients__info">
+            <p>Meet the team</p>
+            <h3>We are chilled and a laidback team</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="container__clients__images">
+            <div class="container__clients__images__item">
+                <img id="imgCliente3" src="./person3.png" alt="">
+
+            </div>
+            <div id="itemimg2" class="container__clients__images__item">
+                <div class="container__clients__images__item2">
+                    <img id="imgCliente1" src="./person1.png" alt="">
+                    <img id="imgCliente2" src="./person2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container__clients__review">
+            <div class="container__clients__review__info">
+                <p>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and
+                    talented team.”</p>
+            </div>
+            <div class="container__clients__review__profile">
+                <img src="./person4.png" alt="">
+                <div class="container__clients__review__profile__info">
+                    <h6>Carlos Tran</h6>
+                    <p>The Decorate Gatsby</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container__contact">
+        <div class="container__contact__items">
+            <div class="container__contact__items__nav-net">
+                <div class="container__contact__items__nav">
+                    <button name="Home" onclick="ScrollChange(event)">Home</button>
+                    <button name="Services" onclick="ScrollChange(event)">Services</button>
+                    <button name="Works" onclick="ScrollChange(event)">Our Works</button>
+                    <button name="Clients" onclick="ScrollChange(event)">Clients</button>
+                    <button name="Contact" onclick="ScrollChange(event)">Contact</button>
+                </div>
+                <div class="container__contact__items__net">
+                    <div class="container__contact__items__net__content">
+                        <h2>Edie</h2>
+                        <div class="container__contact__items__net__content__imgs">
+                            <img src="./instagram.svg" alt="">
+                            <img src="./linkedin.svg" alt="">
+                            <img src="./twitter.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__contact__items__search">
+                <div id="search2 " class="container__home__description__search">
+                    <p>Want us to contact you?</p>
+                    <div class="container__home__description__contact__search">
+                        <input placeholder="Email" type="email">
+                        <button>Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>created by odiseo - devChallenges.io</p>
+        </div>
+    </div>
+    <script>
+        function open() {
+            document.getElementById("nav").classList.toggle("open")
+        }
+        const ScrollChange = (event) => {
+            const height = window.innerHeight;
+            let { name } = event.target;
+
+            switch (name) {
+                case "Home":
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                    open();
+                    break;
+                case "Services":
+                    window.scrollTo({ top: height + 280, behavior: "smooth" });
+                    open();
+                    break;
+                case "Works":
+                    window.scrollTo({ top: height * 2 + 200, behavior: "smooth" });
+                    open();
+                    break;
+                case "Clients":
+                    window.scrollTo({ top: height * 4, behavior: "smooth" });
+                    open();
+                    break;
+                case "Contact":
+                    window.scrollTo({ top: height * 5, behavior: "smooth" });
+                    open();
+                    break;
+
+                default:
+                    break;
+            }
+        }
+        document.getElementById("boton").onclick = function () {
+            open();
+            var pic;
+            if (document.getElementById("img").src == "http://127.0.0.1:5500/menu.png") {
+                pic = "close.png"
+            }
+            else {
+                pic = "menu.png"
+            }
+            document.getElementById("img").src = pic
+        }
+    </script>
 </body>
 
 </html>
